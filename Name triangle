@@ -1,0 +1,22 @@
+/*name triangle printer*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+    setbuf(stdout,NULL);
+    int n,i,j;
+    char name[100];
+    puts("enter a number as limit and your name, i can show your name triangle");
+
+    scanf("%d",&n);
+    scanf("%s",name);
+    for(i=1;i<=n;i++){
+      for(j=1;j<=i;j++){
+        printf("%s ",name);
+      } printf("\n");
+    }
+    return EXIT_SUCCESS;
+
+}
